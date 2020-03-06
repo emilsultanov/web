@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .nav-area {
+            background-color: #262626;
+        }
+
+        .nav-area::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .nav-area ul {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .nav-area>ul>li {
+            float: left;
+            position: relative;
+        }
+
+        .nav-area ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        .nav-area ul li:hover a {
+            background-color: #34495a;
+        }
+
+        .nav-area ul ul {
+            position: absolute;
+            padding: 0;
+            min-width: 160px;
+            display: none;
+            top: 100%;
+            left: 0;
+        }
+
+        .nav-area ul li:hover>ul {
+            display: block;
+        }
+
+        .nav-area ul ul li:hover a {
+            background-color: #262626;
+        }
+
+        .nav-area ul ul li {
+            position: relative;
+        }
+
+        .nav-area ul ul ul {
+            top: 0;
+            left: 100%;
+        }
+
+        .nav-area ul ul ul li:hover a {
+            background-color: #34495a;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-area">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a>
+                <ul>
+                    <li><a href="#">web design</a></li>
+                    <li><a href="#">web development</a></li>
+                    <li><a href="#">email marketing</a></li>
+                    <li><a href="#">graphics design</a>
+                        <ul>
+                            <li><a href="#">logo design</a></li>
+                            <li><a href="#">card design</a></li>
+                            <li><a href="#">poster design</a></li>
+                            <li><a href="#">template design</a>
+                                <ul>
+                                    <li><a href="#">web template</a></li>
+                                    <li><a href="#">email template</a></li>
+                                    <li><a href="#">news template</a></li>
+                                    <li><a href="#">bio template</a></li>
+                                    <li><a href="#">wedding template</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">brochure design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">seo</a></li>
+                </ul>
+            </li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

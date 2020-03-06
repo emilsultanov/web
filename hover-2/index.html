@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            margin: 100px auto;
+            width: 1200px;
+            height: 230px;
+        }
+
+        div.container {
+            width: 200px;
+            height: 230px;
+            float: left;
+            transition: height .4s;
+            border-radius: 7px;
+        }
+
+        div#one {
+            background-color: rgb(208, 101, 3)
+        }
+
+        div#two {
+            background-color: rgb(233, 147, 26)
+        }
+
+        div#three {
+            background-color: rgb(22, 145, 190)
+        }
+
+        div#four {
+            background-color: rgb(22, 107, 162)
+        }
+
+        div#five {
+            background-color: rgb(27, 54, 71)
+        }
+
+        div#six {
+            background-color: rgb(21, 40, 54)
+        }
+
+        img {
+            display: block;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, .15);
+            width: 40px;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 20px rgba(255, 255, 255, .5);
+            transition: box-shadow .4s;
+        }
+
+        p.text {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            opacity: .5;
+            padding-top: 20px;
+            transition: padding-top .4s;
+        }
+
+        div.container:hover {
+            height: 270px;
+            cursor: pointer;
+        }
+
+        div.container:hover p.text {
+            padding-top: 50px;
+            opacity: 1;
+        }
+
+        div.container:hover img {
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="one">
+            <img src="icon1.png" alt="">
+            <p class="text">Home</p>
+        </div>
+        <div class="container" id="two">
+            <img src="icon2.png" alt="">
+            <p class="text">Files</p>
+        </div>
+        <div class="container" id="three">
+            <img src="icon3.png" alt="">
+            <p class="text">Google+</p>
+        </div>
+        <div class="container" id="four">
+            <img src="icon4.png" alt="">
+            <p class="text">Apple</p>
+        </div>
+        <div class="container" id="five">
+            <img src="icon5.png" alt="">
+            <p class="text">HTML5</p>
+        </div>
+        <div class="container" id="six">
+            <img src="icon6.png" alt="">
+            <p class="text">Writing</p>
+        </div>
+    </header>
+</body>
+
+</html>
